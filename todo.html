@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>To-Do List</title>
+    <style>
+        body{
+            background-color: lightsteelblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1{
+            text-align: center;
+            align-items: center;
+            border: 2px solid #454550;
+            border-radius: 8px;
+            max-width: 32%;
+            margin: 20px auto;
+            background-color: lightgoldenrodyellow;
+            padding-left: 5px;
+        }
+        #task-container{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin: 0 auto;
+            align-items: center;
+        }
+        input{
+            width: 160px;
+            height: 30px;
+            font-size: boldest;
+            color: white;
+            margin-left: 130px;
+            background-color: #454545;
+            border-radius: 7px
+        }
+        ::placeholder{
+            color: lightgray;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        button{
+            border-radius: 9px;
+            height: 40px;
+            width: 70px;
+            background-color: limegreen;
+            color: black;
+            cursor: pointer;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p{
+            flex: 1;
+            margin-left: 5px;
+        }
+        #todos{
+            margin: 15px;
+            padding: 10px;
+        }
+        .todos-item{
+            display: flex;
+            align-items: center;
+            border: 1px solid #454548;
+            border-radius: 3px;
+            background-color: lightpink;
+            margin-bottom: 1px; 
+        }
+        .todos-item button{  
+            margin: auto;
+            margin-right: 11px;
+            border-radius: 30%;
+            height: 45px;
+            width: 60px;
+            background-color: beige;
+            cursor: pointer
+        }
+    </style>
+</head>
+    <body>
+        <h1>To-Do List 📝</h1>
+        <div id="task-container">
+            <input type="text" placeholder="Enter Task" >
+            <button onclick="addToDo()">Add Task</button>
+            <button onclick="clearToDo()">Clear All</button>
+        </div>
+        
+        <div id="todos"></div>
+    </body>
+    <script src="todo.js"></script>
+</html>
